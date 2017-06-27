@@ -29,5 +29,21 @@ namespace LanguageFeatures.Controllers
 			// 뷰를 생성한다.
 			return View("Result", (object)String.Format("Product name: {0}", productName));
 		}
+
+		public ViewResult CreateProduct()
+		{
+			// 새로운 Product 개체를 생성하고 속성 값들을 설정한다.
+			Product myProduct = new Product
+			{
+				ProductID = 100,
+				Name = "Kayak",
+				Description = "A boat for one person",
+				Price = 275M,
+				Category = "Watersports"
+			};
+
+			return View("Result",
+				(object)String.Format("Category: {0}", myProduct.Category));
+		}
     }
 }
