@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace LanguageFeatures.Models
+namespace EssentialTools.Models
 {
 	public class ShoppingCart: IEnumerable<Product>
 	{

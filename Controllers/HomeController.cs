@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using LanguageFeatures.Models;
+using EssentialTools.Models;
 using System.Text;
 
-namespace LanguageFeatures.Controllers
+namespace EssentialTools.Controllers
 {
     public class HomeController : Controller
     {
